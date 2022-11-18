@@ -41,7 +41,5 @@ public class ProdutoServiceImpl implements ProdutoService {
             throw new RuntimeException("Ocorreu um erro ao tentar excluir o produto."
                                         + e.getClass() + e.getMessage() + e.getStackTrace());
         }
-
-
     }
 }
