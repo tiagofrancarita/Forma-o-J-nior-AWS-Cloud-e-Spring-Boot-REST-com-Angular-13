@@ -16,8 +16,8 @@ public class Produto {
     @Column(name = "nome")
     private String nome;
 
-    @Column(name = "valor")
-    private BigDecimal valor;
+    @Column(name = "preco")
+    private BigDecimal preco;
 
     @Column(name = "descricao")
     private String descricao;
