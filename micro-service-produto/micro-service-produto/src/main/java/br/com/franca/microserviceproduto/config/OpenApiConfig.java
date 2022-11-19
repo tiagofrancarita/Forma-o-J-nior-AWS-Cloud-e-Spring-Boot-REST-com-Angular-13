@@ -11,13 +11,10 @@ public class OpenApiConfig {
     @Bean
     public OpenAPI customOpenAPI(){
 
-
-
         return new OpenAPI()
                 .info( new Info()
                         .title("API - PRODUTO")
                         .description("API de Produto")
                         .version("1.0.0"));
-
     }
 }

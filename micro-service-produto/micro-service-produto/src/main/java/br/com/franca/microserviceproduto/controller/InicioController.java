@@ -11,7 +11,7 @@ public class InicioController {
 
     public static final String  APLICACAO_INICIADA = "Aplicação iniciada com sucesso";
 
-    @GetMapping()
+    @GetMapping("")
     public String inicio(){
 
         return APLICACAO_INICIADA;
