@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController()
-@RequestMapping("/api/produtos")
+@RequestMapping("/api/produto")
 public class ProdutoController {
 
     public final ProdutoService produtoService;
@@ -31,7 +31,7 @@ public class ProdutoController {
          var novoProduto = produtoService.salvar(produto);
 
 
-        return new ResponseEntity(produto, HttpStatus.CREATED);
+        return new ResponseEntity(novoProduto, HttpStatus.CREATED);
     }
 
     @DeleteMapping("/{id}")
@@ -41,6 +41,4 @@ public class ProdutoController {
 
         return  ResponseEntity.ok().build();
     }
-
-
 }
