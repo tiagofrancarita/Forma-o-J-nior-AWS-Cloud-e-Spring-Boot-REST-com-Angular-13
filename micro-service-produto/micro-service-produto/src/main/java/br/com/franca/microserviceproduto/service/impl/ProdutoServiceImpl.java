@@ -4,7 +4,6 @@ import br.com.franca.microserviceproduto.entity.Produto;
 import br.com.franca.microserviceproduto.repository.ProdutoRepository;
 import br.com.franca.microserviceproduto.service.ProdutoService;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service
@@ -15,15 +14,12 @@ public class ProdutoServiceImpl implements ProdutoService {
     public ProdutoServiceImpl(ProdutoRepository produtoRepository) {
         this.produtoRepository = produtoRepository;
     }
-
-
     @Override
     public List<Produto> listarTodos() {
 
 
         return produtoRepository.findAll();
     }
-
     @Override
     public Produto salvar(Produto produto) {
         return produtoRepository.save(produto);

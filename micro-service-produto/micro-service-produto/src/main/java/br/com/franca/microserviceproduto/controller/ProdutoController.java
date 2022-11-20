@@ -5,7 +5,6 @@ import br.com.franca.microserviceproduto.service.ProdutoService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController()
@@ -29,7 +28,6 @@ public class ProdutoController {
     public  ResponseEntity<Produto> salvar(@RequestBody Produto produto){
 
          var novoProduto = produtoService.salvar(produto);
-
 
         return new ResponseEntity(novoProduto, HttpStatus.CREATED);
     }
